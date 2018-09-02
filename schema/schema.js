@@ -37,8 +37,9 @@ const AuthorType = new GraphQLObjectType({
     age: { type: GraphQLInt },
     books: {
       type: GraphQLList(BookType),
-      reslove(parent, args) {
-        return Book.find({ authorId: parent.id });
+      async reslove(parent, args) {
+        const book = await Book.find({ authorId: parent.id });
+        return book;
       },
     },
   }),
