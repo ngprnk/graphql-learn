@@ -10,10 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-graphql": "^0.6.12",
     "graphql": "^0.13.2",
     "loadash": "^1.0.0",
+    "mongoose": "^5.2.12",
     "nodemon": "^1.18.3"
   },
   "devDependencies": {
